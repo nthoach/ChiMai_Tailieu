@@ -1,11 +1,18 @@
 #!/usr/bin/env python3
-"""Fetch literature metadata from CrossRef and download available PDFs.
+"""Fetch literature metadata from CrossRef, LibGen, and Sci-Hub, and download available PDFs.
 
 Usage: python3 fetch_literature.py
 
 Outputs:
 - updates `urls.txt`, `metadata.csv`, `summary.csv`
 - downloads PDFs into `References/`
+
+Sources:
+- CrossRef API (primary academic database)
+- LibGen (open-access book/paper repository)
+- Sci-Hub (PDF access for DOIs)
+
+Note: LibGen and Sci-Hub access may be unreliable due to network restrictions.
 """
 import csv
 import json
@@ -14,6 +21,12 @@ import re
 import sys
 import time
 from urllib import parse, request, error
+
+try:
+    import requests
+except ImportError:
+    print('requests library not found. Install with: pip install requests')
+    sys.exit(1)
 
 BASE_DIR = os.path.dirname(__file__)
 KEYWORDS_FILE = os.path.join(BASE_DIR, 'keywords.md')
@@ -64,9 +77,9 @@ def append_summary(row):
             writer.writerow(['filename','objective','methods','main_findings','relevance_notes'])
         writer.writerow(row)
 
-def query_crossref(query, rows=20):
+def query_crossref(query, rows=20, offset=0):
     q = parse.quote(query)
-    url = f'https://api.crossref.org/works?query={q}&rows={rows}'
+    url = f'https://api.crossref.org/works?query={q}&rows={rows}&offset={offset}'
     try:
         with request.urlopen(url, timeout=30) as resp:
             data = resp.read()
@@ -166,13 +179,25 @@ def main():
     # build a compact query using first 6 keywords
     query = ' '.join(kws[:8])
     print('Querying CrossRef for:', query)
-    resp = query_crossref(query, rows=50)
-    if not resp or 'message' not in resp:
-        print('No response from CrossRef')
-        sys.exit(1)
-
-    items = resp['message'].get('items', [])
-    print(f'Found {len(items)} items')
+    
+    # Search CrossRef with pagination
+    all_crossref_items = []
+    offset = 0
+    max_pages = 5  # Fetch up to 5 pages of 50 items each
+    for page in range(max_pages):
+        resp = query_crossref(query, rows=50, offset=offset)
+        if not resp or 'message' not in resp:
+            break
+        items = resp['message'].get('items', [])
+        if not items:
+            break
+        all_crossref_items.extend(items)
+        offset += 50
+        if len(items) < 50:  # Last page
+            break
+        time.sleep(2)  # Rate limiting
+    
+    print(f'Found {len(all_crossref_items)} items from CrossRef')
 
     # Also try LibGen (open-access mirrors)
     try:
@@ -183,7 +208,7 @@ def main():
         print('LibGen search failed:', e)
 
     # Collect DOIs for Sci-Hub
-    dois = [it.get('DOI') for it in items if it.get('DOI')] + [it.get('doi') for it in libgen_items if it.get('doi')]
+    dois = [it.get('DOI') for it in all_crossref_items if it.get('DOI')] + [it.get('doi') for it in libgen_items if it.get('doi')]
     scihub_items = []
     if dois:
         try:
@@ -193,39 +218,46 @@ def main():
             print('Sci-Hub search failed:', e)
 
     count = 0
-    for it in (items + libgen_items):
-        doi = it.get('DOI', '')
-        title = ' '.join(it.get('title', [])) if it.get('title') else ''
-        authors = []
-        for a in it.get('author', [])[:6]:
-            name = ' '.join(filter(None, [a.get('given',''), a.get('family','')])).strip()
-            if name:
-                authors.append(name)
-        authors_s = '; '.join(authors)
-        year = ''
-        try:
-            year = it.get('issued', {}).get('date-parts', [[None]])[0][0] or ''
-        except Exception:
+    for it in (all_crossref_items + libgen_items):
+        # Handle different item formats
+        if 'DOI' in it:  # CrossRef item
+            doi = it.get('DOI', '')
+            title = ' '.join(it.get('title', [])) if it.get('title') else ''
+            authors = []
+            for a in it.get('author', [])[:6]:
+                name = ' '.join(filter(None, [a.get('given',''), a.get('family','')])).strip()
+                if name:
+                    authors.append(name)
+            authors_s = '; '.join(authors)
             year = ''
-        journal = it.get('container-title', [''])[0]
-        abstract = it.get('abstract', '')
-
-        # prefer link entries that point to PDFs
-        pdf_url = None
-        for l in it.get('link', []) or []:
-            url = l.get('URL')
-            if not url:
-                continue
-            content_type = l.get('content-type','')
-            if 'pdf' in content_type.lower() or url.lower().endswith('.pdf'):
-                pdf_url = url
-                break
-
-        # fallback: use URL or 'URL' field
-        url_field = it.get('URL', '')
+            try:
+                year = it.get('issued', {}).get('date-parts', [[None]])[0][0] or ''
+            except Exception:
+                year = ''
+            journal = it.get('container-title', [''])[0]
+            abstract = it.get('abstract', '')
+            url_field = it.get('URL', '')
+            pdf_url = None
+            for l in it.get('link', []) or []:
+                url = l.get('URL')
+                if not url:
+                    continue
+                content_type = l.get('content-type','')
+                if 'pdf' in content_type.lower() or url.lower().endswith('.pdf'):
+                    pdf_url = url
+                    break
+        else:  # LibGen item
+            doi = it.get('doi', '')
+            title = it.get('title', '')
+            authors_s = it.get('authors', '')
+            year = it.get('year', '')
+            journal = it.get('journal', '')
+            abstract = it.get('abstract', '')
+            url_field = it.get('url', '')
+            pdf_url = it.get('pdf_url', '')
 
         # build filename
-        last_author = authors[0].split()[-1] if authors else 'anon'
+        last_author = authors_s.split(';')[0].strip().split()[-1] if authors_s else 'anon'
         short = re.sub(r'\W+', '_', title)[:50]
         filename_base = f"{year}_{last_author}_{short}" if year else f"{last_author}_{short}"
         filename_base = sanitize_filename(filename_base)
@@ -240,19 +272,34 @@ def main():
         append_metadata([pdf_name, title, authors_s, year, journal, doi, preferred_url, abstract, ''])
         append_summary([pdf_name, '', '', '', ''])
 
+        # Try to download PDF
+        downloaded = False
         if pdf_url:
             if not os.path.exists(pdf_path):
                 print('Downloading PDF for:', title[:80])
                 ok = download_file(pdf_url, pdf_path)
                 if ok:
                     print('Saved to', pdf_path)
+                    downloaded = True
                 else:
                     print('Failed to download', pdf_url)
             else:
                 print('Already downloaded', pdf_name)
+                downloaded = True
+
+        # If no PDF yet, try Sci-Hub
+        if not downloaded and doi:
+            scihub_pdf = next((s['pdf_url'] for s in scihub_items if s['doi'] == doi), None)
+            if scihub_pdf and not os.path.exists(pdf_path):
+                print('Trying Sci-Hub for:', title[:80])
+                ok = download_file(scihub_pdf, pdf_path)
+                if ok:
+                    print('Saved from Sci-Hub to', pdf_path)
+                else:
+                    print('Failed Sci-Hub download', scihub_pdf)
 
         count += 1
-        if count >= 50:
+        if count >= 250:
             break
         time.sleep(1)
 
