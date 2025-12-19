@@ -75,16 +75,87 @@ def query_crossref(query, rows=20):
         print('Network error querying CrossRef:', e)
         return None
 
-def download_file(url, outpath):
+def download_file(url, outpath, timeout=60):
     try:
         req = request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-        with request.urlopen(req, timeout=60) as resp:
+        with request.urlopen(req, timeout=timeout) as resp:
             with open(outpath, 'wb') as f:
                 f.write(resp.read())
         return True
     except Exception as e:
         print('Download failed for', url, ':', e)
         return False
+
+
+def query_libgen(query, rows=20):
+    """Query LibGen mirrors for the query and return list of items with keys: title, authors, year, doi, url, pdf_url."""
+    mirrors = [
+        'https://libgen.is/search.php',
+        'https://libgen.rs/search.php',
+        'https://libgen.st/search.php'
+    ]
+    for base in mirrors:
+        try:
+            params = {'req': query, 'lg_topic': 'libgen', 'open': '0', 'view': 'simple', 'res': rows, 'phrase': '1', 'column': 'def'}
+            resp = requests.get(base, params=params, timeout=20)
+            resp.raise_for_status()
+            html = resp.text
+            items = []
+            # find table rows
+            rows_html = re.findall(r'<tr.*?>(.*?)</tr>', html, re.DOTALL)
+            # Skip header row and parse results
+            for row in rows_html[1:rows+1]:
+                cols = re.findall(r'<td.*?>(.*?)</td>', row, re.DOTALL)
+                if len(cols) < 5:
+                    continue
+                authors = re.sub(r'<[^>]+>', '', cols[1]).strip()
+                title = re.sub(r'<[^>]+>', '', cols[2]).strip()
+                year = re.sub(r'<[^>]+>', '', cols[4]).strip()
+                # download link (may be relative)
+                mirrors_found = re.findall(r'href="([^"]*download[^"]*)"', row)
+                pdf_url = ''
+                if mirrors_found:
+                    pdf_url = mirrors_found[0]
+                    if pdf_url.startswith('/'):
+                        pdf_url = base.replace('/search.php', '') + pdf_url
+                doi = ''
+                items.append({'title': title, 'authors': authors, 'year': year, 'doi': doi, 'url': pdf_url, 'pdf_url': pdf_url, 'journal': '', 'abstract': ''})
+            if items:
+                return items
+        except Exception as e:
+            # try next mirror
+            continue
+    return []
+
+
+def query_scihub(dois, timeout=20, max_per_run=10):
+    """Query Sci-Hub mirrors for given DOIs and return list of {'doi', 'pdf_url'} matches."""
+    scihub_bases = ['https://sci-hub.se/', 'https://sci-hub.ru/', 'https://sci-hub.st/']
+    found = []
+    for doi in (dois or [])[:max_per_run]:
+        if not doi:
+            continue
+        for base in scihub_bases:
+            try:
+                url = base + doi
+                resp = requests.get(url, timeout=timeout, headers={'User-Agent':'Mozilla/5.0'})
+                if resp.status_code != 200:
+                    continue
+                # Try to find pdf src or iframe
+                m = re.search(r'src="([^"]*\.pdf[^"]*)"', resp.text)
+                if not m:
+                    m = re.search(r'href="([^"]*\.pdf[^"]*)"', resp.text)
+                if m:
+                    pdf_url = m.group(1)
+                    if pdf_url.startswith('//'):
+                        pdf_url = 'https:' + pdf_url
+                    elif pdf_url.startswith('/'):
+                        pdf_url = base.rstrip('/') + pdf_url
+                    found.append({'doi': doi, 'pdf_url': pdf_url})
+                    break
+            except Exception:
+                continue
+    return found
 
 def main():
     kws = read_keywords()
@@ -102,8 +173,27 @@ def main():
 
     items = resp['message'].get('items', [])
     print(f'Found {len(items)} items')
+
+    # Also try LibGen (open-access mirrors)
+    try:
+        libgen_items = query_libgen(query, rows=20)
+        print(f'Found {len(libgen_items)} items from LibGen')
+    except Exception as e:
+        libgen_items = []
+        print('LibGen search failed:', e)
+
+    # Collect DOIs for Sci-Hub
+    dois = [it.get('DOI') for it in items if it.get('DOI')] + [it.get('doi') for it in libgen_items if it.get('doi')]
+    scihub_items = []
+    if dois:
+        try:
+            scihub_items = query_scihub(dois)
+            print(f'Found {len(scihub_items)} PDFs from Sci-Hub')
+        except Exception as e:
+            print('Sci-Hub search failed:', e)
+
     count = 0
-    for it in items:
+    for it in (items + libgen_items):
         doi = it.get('DOI', '')
         title = ' '.join(it.get('title', [])) if it.get('title') else ''
         authors = []
