@@ -1,0 +1,53 @@
+# URLs and DOIs for literature on mycotoxins in herbal medicine
+# Format: DOI_or_URL [tab] preferred_filename
+
+http://jst.ntt.edu.vn/index.php/jst/article/download/276/280	2022_Th_Tnh_hnh_nhim_vi_nm_trong_mt_s_dc_liu_dng.pdf
+https://jst.ntt.edu.vn/index.php/jst/article/download/214/363	2024_Th_Tnh_hnh_nhim_vi_nm_trong_mt_s_dc_liu_dng.pdf
+https://jst.ntt.edu.vn/index.php/jst/article/download/318/411	2024_ng_ng_dng_cht_chun_imperatorin_phn_lp_t_dc_l.pdf
+http://jst.ntt.edu.vn/index.php/jst/article/download/120/120	2020_ng_ng_dng_cht_chun_imperatorin_phn_lp_t_dc_l.pdf
+http://vap.ac.vn/Portals/0/TuyenTap/2022/12/15/de89925a5e4d4f8d906876cad46ab8f5/10. Ho Thi Thu Ba.pdf	2022_Ba_SU_TP_V_BO_TN_CC_LOI_NM_N_V_NM_DC_LI.pdf
+https://doi.org/10.52163/yhc.v63i1.279	2022_Hi_THC_TRNG_NHIM_NM_MC_ALFLATOXIN_V_TRANG_THIT.pdf
+http://vap.ac.vn/Portals/0/TuyenTap/2022/12/15/de89925a5e4d4f8d906876cad46ab8f5/21. Le Thanh Huyen.pdf	2022_Huyn_A_DNG_SINH_HC_NM_N_V_NM_DC_LIU_TI_VN_.pdf
+https://jprdi.vn/JP/article/download/225/119	2024_NGUYN_nh_lng_astragalosid_IV_trong_dc_liu_Hong_k.pdf
+https://tapchiyhcd.vn/index.php/yhcd/article/download/3487/3062	2025_Khi_44_CHNG_TRNH_O_TO_CHUYN_NGNH_DC_LIU_D.pdf
+https://doi.org/10.52163/yhc.v63i2.297	2022_Hi_NGHIN_CU_KIN_THC_THC_HNH_PHNG_CHNG_NHIM_N.pdf
+https://doi.org/10.59294/hiujs.34.2025.741	2025_Phan_Xc_nh_14_dc_cht_ngy_to_trong_ch_phm_dng.pdf
+https://tapchiyhcd.vn/index.php/yhcd/article/download/1276/721	2024_Hng_32_NGHIN_CU_MC__NHIM_CC_LOI_CA_CHI_ASPERG.pdf
+https://doi.org/10.63240/jmm-nimm.2025.5	2025_anon_.pdf
+https://doi.org/10.63240/jmm-nimm.2025.1	2025_anon_.pdf
+https://doi.org/10.63240/jmm-nimm.2025.4	2025_anon_.pdf
+https://doi.org/10.63240/jmm-nimm.2025.3	2025_anon_.pdf
+https://doi.org/10.63240/jmm-nimm.2025.2	2025_anon_.pdf
+https://tapchiyhocvietnam.vn/index.php/vmj/article/download/5822/5252	2023_Phan_XY_DNG_QUY_TRNH_NH_LNG_8_HOT_CHT_TN_DC.pdf
+https://doi.org/10.22144/ctu.jsi.2016.074	2016_Xun_Nghin_cu_mi_trng_thch_hp_cho_sn_xut_qu_t.pdf
+https://doi.org/10.63240/jmm-nimm.2025.4.149	2025_Qun_NGHIN_CU_XY_DNG_PHNG_PHP_NH_TNH_V_NH_.pdf
+https://tapchiyhcd.vn/index.php/yhcd/article/download/1411/839	2024_Lan_11_NGHIN_CU_MC__NHIM_2_LOI_ASPERGILLUS_FLAV.pdf
+https://jprdi.vn/JP/article/download/342/193	2025_Quyn_Dc_liu_cha_alcaloid_tc_dng_trn_h_thn_kinh.pdf
+https://tapchi.ctump.edu.vn/index.php/ctump/article/download/2431/1934	2024__NGHIN_CU_C_IM_LM_SNG_V_CC_YU_T_LIN_QU.pdf
+https://tapchiyhcd.vn/index.php/yhcd/article/download/3468/3042	2025_Duyn_25_VT_LIU_NANO_TIM_NNG_NG_DNG_TRONG_DC_M_.pdf
+https://doi.org/10.52163/yhc.v63i6.448	2022_Phc_NGHIN_CU_T_L_NHIM_NM__CC_V_THUC_NG_D.pdf
+https://jprdi.vn/JP/article/download/230/124	2024_Nguyn_Thit_lp_chun_Acid_oleanolic_phn_lp_t_dc_li.pdf
+http://jst.ntt.edu.vn/index.php/jst/article/download/139/139	2020_Thu_Phn_lp_v_kho_st_hm_lng_aloe_emodin_trong_d.pdf
+https://jshou.edu.vn/houjs/article/download/326/261	2024_H_HOT_TNH_SINH_HC_CA_MT_S_CHNG_VI_NM_NI_SIN.pdf
+https://jst.ntt.edu.vn/index.php/jst/article/download/301/396	2024_Thu_Phn_lp_v_kho_st_hm_lng_aloe_emodin_trong_d.pdf
+https://tapchiyhocvietnam.vn/index.php/vmj/article/download/13219/11322	2025_Sn_LIU_PHP_HO_DC_TRONG_IU_TR_PHA_CP_TNH__B.pdf
+https://tapchikhoahochongbang.vn/js/article/download/316/427	2023_V_Kho_st_v_so_snh_c_im_hnh_thi_ngun_nguy.pdf
+https://huejmp.vn/index.php/journal/article/download/276/270	2024_Bi_Phn_tch_d_liu_cht_chuyn_ha_th_cp_trong_c.pdf
+https://tapchiyhocvietnam.vn/index.php/vmj/article/download/4830/4420	2023_Nguyn_TNG_QUAN_V_QUN_L_THUC_DC_LIU_TI_VIT_NAM.pdf
+https://jst.tnu.edu.vn/jst/article/viewFile/10785/pdf	2024_Loan_NGHIN_CU_BO_CH_VIN_NANG_CNG_H_TR_BO_V_GA.pdf
+http://ojs.jomc.vn/index.php/vn/article/download/211/114	2021_Trang_Nghin_cu_nh_gi_kh_nng_khng_nm_mc_cho_vt.pdf
+http://jst.tnu.edu.vn/jst/article/viewFile/8326/pdf	2023_Phng_NH_LNG_HOT_CHT_PSEUDOPROTODIOSCIN_TRONG_DC.pdf
+https://tapchikhoahochongbang.vn/js/article/download/1010/893	2025_Thm_MT_S_NHN_T_NH_HNG_N_HNH_VI_BN_THUC_D.pdf
+https://tapchiyhcd.vn/index.php/yhcd/article/download/3451/3020	2025_Kin_8_NGHIN_CU_C_TNH_CP_V_C_TNH_BN_TRNG_D.pdf
+https://tapchiyhcd.vn/index.php/yhcd/article/download/3486/3061	2025_Kin_43_CHATBOT_DC_S_O_TCH_HP_C_S_D_LIU_THUC.pdf
+https://tapchiyhcd.vn/index.php/yhcd/article/download/3463/3037	2025_Tun_20_NH_LNG_CH_TRONG_CAO_C_CY_NG_SC_V_MT.pdf
+https://jprdi.vn/JP/article/download/319/192	2025_Chi_Ch_dy_Nghin_cu_pht_trin_sn_phm_dc_liu_t.pdf
+https://doi.org/10.32895/hcjm.p.2025.03.05	2025_Lng_Xy_dng_quy_trnh_xc_nh_14_dc_cht_ngy_to_.pdf
+https://jprdi.vn/JP/article/download/307/197	2025_Hoa_Cc_cng_trnh_nghin_cu_v_dc_liu_c_tc_dng.pdf
+https://tapchiyhocvietnam.vn/index.php/vmj/article/download/5249/4780	2023_V_NH_GI_HIU_QU_CAN_THIP_CA_DC_S_LN_VIC_T.pdf
+https://tapchiyhcd.vn/index.php/yhcd/article/download/3469/3043	2025_H_26_NH_LNG_FLAVONOID_TON_PHN_TRONG_CAO_C_T.pdf
+https://huejmp.vn/index.php/journal/article/download/546/530	2025_Nguyn_Xy_dng_phng_php_nh_lng_conessin_v_nh_g.pdf
+https://tapchi.ctump.edu.vn/index.php/ctump/article/download/1253/1499	2023_L_XY_DNG_QUY_TRNH_NH_GI_HOT_TNH_C_CH_ENZYM.pdf
+https://tapchiyhocvietnam.vn/index.php/vmj/article/download/12771/11044	2025_Phan_T_L_NHIM_THNH_PHN_LOI_V_MT_S_YU_T_LIN_.pdf
+https://doi.org/10.32895/hcjm.p.2024.05.03	2024_Nguyn_Kho_st_kh_nng_phi_hp_tinh_du_Ngh_v_du_Ri.pdf
+https://tapchi.ctump.edu.vn/index.php/ctump/article/download/183/103	2022_Nguyn_NGHIN_CU_TNH_HNH_NHIM_NM_DA_DERMATOPHYTES_TR.pdf

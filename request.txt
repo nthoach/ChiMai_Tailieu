@@ -1,6 +1,7 @@
 Tìm tài liệu tham khảo, tài liệu khoa học bằng tiếng Việt, Tiếng Anh và tiếng pháp về chủ để: Nhiễm Nấm và độc tố vi nấm trong thuốc đông dược.
 
 Bước 1: Tạo ra danh sách từ khóa tìm kiếm liên quan bằng tiếng Việt, Anh, và Pháp cho chủ đề lĩnh vực liên quan đến chủ đề cần nghiên cứu, lưu thành 1 file text kiểu .md
+
 Bước 2: fetch internet, cơ sở dữ liệu, thư viện (nếu cần thông tin access thì yêu cầu) để lấy thông tin và tài liêu.
 
 Bước 3: Phân loại tài liệu và download về theo phân loại, tổng hợp tài liệu và sắp xếp thành 1 file
