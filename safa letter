@@ -1,0 +1,177 @@
+To the 	Khalifa University Postgraduate Admission Committee:
+I write this letter to highly recommend Ms. Safa Mohammed Sali to the PhD program in Electrical & Computer Engineering at Khalifa University. I have known Ms. Safe since she joined Khalifa University for her internship in June 2024. I have been working with her on the current research: “Novel SEPIC Converter with Enhanced Voltage Gain and Reduced Voltage Stresses,” as her co-advisor/mentor on research activities along with Dr. Ameena Saad Al-Sumaiti (Associate Professor at KU). She has demonstrated exceptional performance in research and always completes every assignment on time when doing research and laboratory work.
+Ms. Safa is a strong candidate for the Ph.D. program in Electrical Engineering & Computer Science because of her academic and communication English skills, science and technology background, BTECH. &MTECH credentials, and excellent working/self-studying skills. She has an IELTS score of 7.5, and in working with her, I find no barrier in English communication in all her speaking, listening, writing, and reading skills. Furthermore, her academic English skills are also exhibited via her recent paper writing as we are co-authors. His GRE score evidences her strong background in science and technology. Furthermore, through my co-supervising on her internship and working on her current research project on power electronics, she has used her excellent skills and background in using Matlab/Simulink platform, DST, and Texas instruments in laboratory and prototype creation, office-related software, mathematics, and self-studying to fulfill each assigned step for her current research topic with me and Dr. Ameena.
+Furthermore, Ms. Safa already prepared well for her research-oriented journey in her Ph.D. program not only by background and skills but also by publishing scientific papers at some conferences and by preparing high-quality manuscripts for to-ranked journals in her specific research area.
+To sum up, Ms. Safa is an outstanding candidate for the Ph.D. program in Electrical Engineering and Computer Science at Khalifa University. Therefore, I highly recommend her and believe that her outstanding performance and qualifications will help her to excel as a Ph. D student at Khalifa University and have excellent achievements as an independent researcher soon.
+Yours Sincerely,
+Nguyen The Hoach
+
+
+---
+
+
+Interfolio Logo
+This is a friendly reminder that Safa Mohammed Sali (safamohammadsalih@gmail.com) has requested a Confidential Letter of Recommendation or Evaluation that is due Dec 23, 2025.
+UPLOAD LETTER
+Safa Mohammed Sali asks that you submit your recommendation by Dec 23, 2025.
+
+Dear Dr. Nguyen The Hoach,
+
+I am using Interfolio to request and manage my letters of recommendation for Research Assistant at New York University. Please don’t hesitate to contact me at safamohammadsalih@gmail.com if you have any questions about my request for a recommendation, the opportunity to which I am applying, or for any other reason.
+
+Best,
+Safa Mohammed Sali
+
+
+--------
+
+Letters to Write
+Safa Mohammed Sali
+Due By:
+Dec 23, 2025
+Recommendation Type:
+General Letter of Recommendation
+Opportunity Description:
+Recommendation for research Assistant position at New York University Abu Dhabi
+Message from Safa Mohammed Sali:
+
+Dear Dr. Nguyen The Hoach,
+
+I am using Interfolio to request and manage my letters of recommendation for Research Assistant at New York University. Please don’t hesitate to contact me at safamohammadsalih@gmail.com if you have any questions about my request for a recommendation, the opportunity to which I am applying, or for any other reason.
+
+Best,
+Safa Mohammed Sali
+Documents:
+Title
+Download
+------
+
+
+Updated ConverterSAFA MOHAMMED SALI 
+Research Assistant 
+Abu Dhabi, UAE | +971-56-718-0441 | safamohammadsalih@gmail.com | linkedin.com/in/safa-mohammed-sali
+a36b27199 
+UAE Resident – No Visa Sponsorship Required 
+SUMMARY 
+FPGA/embedded-AI researcher with cross-domain experience in power electronics and real-time computer vision for 
+autonomous systems. Skilled in PS–PL integration on Xilinx Zynq/Kria, AXI4-Stream pipelines, DMA/interrupts, 
+Vitis/Vivado toolchains, and compressed-domain tracking using H.264 motion vectors. Comfortable compiling DNNs 
+with Vitis AI, optimizing resource/performance trade-offs (LUT/DSP/BRAM vs FPS/latency), and building 
+reproducible benchmarking on edge SoCs. 
+CORE TECHNICAL SKILLS 
+• Platforms: Xilinx PYNQ-Z2 (Zynq-7000), Kria KV260 (Zynq UltraScale+), Raspberry Pi 
+• Toolchains: Vivado (IP Integrator, constraints, clocking), Vitis (drivers, bare-metal/Linux apps), Vitis AI 
+(quantizer/optimizer/.xmodel), PYNQ, Docker, Git 
+• HDL / HLS / Interfaces: Verilog (reading/customization), HLS basics, AXI4-Stream, AXI4-Lite, AXI DMA 
+(MM2S/S2MM), VDMA, PL interrupts to PS (GIC), PS-PL reset/clocking, DDR bandwidth awareness 
+• Vision / AI: YOLOv3 and SSD deployment; INT8 quantization flows; model conversion (Darknet/ONNX → 
+Vitis AI); pre/post-processing on PL/PS; throughput/latency profiling; basic pruning/tiling awareness 
+• Video / Compressed Domain: H.264 bitstream (NAL/SPS/PPS/SLICE), motion-vector use for tracking; 
+GStreamer/FFmpeg pipelines; RTSP ingest; zero-copy buffers where applicable 
+• Power Electronics: High-gain DC–DC topologies (quadratic boost, voltage-multiplier coupling), CCM operation, 
+small-signal modeling, PI loop design in MATLAB/Simulink, efficiency and stress analysis 
+• Languages: Python, C/C++; Bash; basic Verilog/VHDL 
+• Ops / Other: Linux (Ubuntu), Jupyter, LaTeX/IEEE template writing, experiment design & reporting 
+EXPERIENCE 
+Visiting Researcher — Khalifa University | Abu Dhabi, UAE | April 2025 – Present 
+• Department of Computer & Information Engineering (Embedded AI & FPGA Acceleration) 
+• Built PS–PL dataflow on PYNQ-Z2 for foundational IP (LED/Counter/Sobel) to master AXI4-Lite control and 
+AXI4-Stream DMA movement; validated interrupt-driven completion on PS via GIC; verified timing (PL fabric 
+clock) and basic back-pressure handling. 
+• Ported real-time object detection to Kria KV260 using Vitis AI: prepared datasets and preprocessing, 
+converted/quantized models (YOLOv3/SSD → INT8), compiled to DPUCZDX8G .xmodel, and integrated 
+runtime with video I/O on embedded Linux. 
+• Constructed GStreamer capture/parse pipelines and evaluation harnesses; prototyped PS-side C++ and Python 
+bindings. 
+• Benchmarked throughput, pipeline latency, and CPU/PL utilization under varied input sizes; documented resource 
+impacts (LUT/DSP/BRAM) of moving pre/post-proc kernels to PL (resize, color-space, Sobel). 
+• Wrote reproducible scripts (Dockerized Vitis AI flows) to rebuild overlays and re-run tests; captured board bring
+up steps, device-tree notes, and DPU runner configs for repeatability. 
+• Current project: Implement a compressed-domain tracking pipeline that extracts/uses H.264 motion vectors to 
+trigger on-demand tracking/detection rather than continuous dense flow—reducing compute and improving 
+FPS/W. 
+Visiting Researcher — Khalifa University | Abu Dhabi, UAE | June 2024 – Feb 2025 
+• Department of Electrical Engineering (Power Electronics) 
+• Designed and simulated high-gain voltage-multiplier coupled quadratic boost converters for small-scale PV: CCM 
+analysis, gain derivation, component sizing (inductor/capacitor ESR ripple), and closed-loop PI voltage control in 
+MATLAB/Simulink. 
+• Evaluated device stress, soft-switching conditions (where applicable), diode recovery implications, and magnetics 
+considerations; drafted publishable results (waveforms, efficiency curves, sensitivity). 
+• Authored technical documentation and contributed figures and mathematical derivations for submission. 
+PROJECTS 
+• KV260 Compressed-Domain Motion-Vector Tracking (Autonomous Vehicles)  | August 2025 – Current 
+Selective, MV-triggered tracking to reduce compute vs dense optical flow. Components: H.264 NAL parsing basics, MV 
+extraction, PS scheduler, PL offload for preprocessing, and performance harness (FPS/latency/power trend logging).  
+• KV260 Real-Time Object Detection | May 2025 – June 2025 
+End-to-end pipeline: capture → preproc (resize/normalize) → DPU inference → postproc (NMS) with Vitis AI; explored 
+INT8 quantization trade-offs and resolution scaling impacts. Benchmarked the results that includes power consumption, FPS, 
+accuracy and latency. 
+• PYNQ-Z2 PL/PS Foundations  | April 2025 – May 2025 
+Sobel edge IP (HLS), AXI4-Lite register map, AXI DMA (MM2S/S2MM) path, interrupt-driven driver on PS, and frame 
+buffer testing. 
+• High-Gain Voltage-Multiplier Coupled Quadratic Boost Converter | June 2024 – Feb 2025 
+VMC-coupled quadratic boost design for small-scale PV integration, including modeling, CCM design, and 
+inductor/capacitor sizing. Implemented closed-loop PI voltage regulation to achieve stable output with fast transient recovery 
+and reduced switch/diode stress versus a conventional quadratic boost. Built and validated a lab prototype demonstrating 
+wide step-up capability and high efficiency at practical switching frequencies. 
+• High-Gain Voltage-Multiplier Coupled Quadratic Boost Converter | June 2024 – Feb 2025 
+VMC-coupled quadratic boost design for small-scale PV integration, including modeling, CCM design, and 
+inductor/capacitor sizing. Implemented closed-loop PI voltage regulation to achieve stable output with fast transient recovery 
+and reduced switch/diode stress versus a conventional quadratic boost. Built and validated a lab prototype demonstrating 
+wide step-up capability and high efficiency at practical switching frequencies. 
+• Intelligent Rover: An IoT Based Smart Surveillance Robotic Car For Military |Masters Final Project | June 
+2020 – July 2021 
+An IoT based smart surveillance robotic car using raspberry pi that aids soldiers by detecting gun, person and metal and live 
+streams the real time video which can be viewed from any where around the globe. The device and the camera can be moved 
+according to the user needs via smart phone.  
+• Smart Buggy-An IoT Based Smart Surveillance Robotic Car Using Raspberry Pi |Masters Mini Project | 
+Jan 2020 – May 2020 
+An IoT based smart surveillance robotic car using raspberry pi that live streams the motion detected real time video and can 
+be controlled and moved from any where around the globe via smart phones and other devices.  
+EDUCATION 
+• Master of Technology in Embedded Systems — APJ Abdul Kalam Technological University | GPA: 3.472 | 2019
+2021 
+• Bachelor of Technology in Electronics & Communication Engineering — APJ Abdul Kalam Technological 
+University | GPA: 3.063 | 2015–2019 
+PUBLICATIONS 
+1. Real-time Object Detection and Associated Hardware Accelerators Targeting Autonomous Vehicles: A Review — 
+Submitted to Engineered Science. DOI: 10.30919/es1865 
+2. Hardware Acceleration in Portable MRIs: State of the Art and Future Prospects — Submitted to IEEE Access. DOI: 
+10.1109/ACCESS.2025.3624072 
+3. Real-Time FPGA-Based CNNs for Detection, Classification, and Tracking in Autonomous Systems: SOTA Designs 
+and Optimizations — Submitted to IEEE Transactions on Intelligent Transportation Systems. Preprint: 
+arXiv:2509.04153 
+4. Real-Time FPGA-Based Transformers & VLMs for Vision Tasks: SOTA Designs and Optimizations — Submitted 
+to IEEE Transactions on Intelligent Vehicles. Preprint: arXiv:2509.04162 
+5. Scheduling Techniques of AI Models on Modern Heterogeneous Edge GPU -- A Critical Review  — Submitted to 
+IEEE Transactions on Industrial Informatics. Preprint: arXiv:2506.01377 
+6. High-Gain Voltage-Multiplier Coupled Quadratic Boost Converter: A New Design for Small Scale PV Integration 
+— Submitted to IEEE Access.  
+7. Intelligent Rover: An IoT Based Smart Surveillance Robotic Car for Military  — DOI: 
+10.1109/ICCSC56913.2023.10143011 Available at https://ieeexplore.ieee.org/document/10143011 
+8. A Review on Object Detection Algorithms for Ship Detection— DOI: 10.1109/ICACCS51430.2021.9441801 
+Available at https://ieeexplore.ieee.org/document/9441801 
+9. Smart Buggy: An IoT Based Smart Surveillance Robotic Car Using Raspberry Pi— DOI: 
+10.1109/ICSCC51209.2021.9528144 Available at https://ieeexplore.ieee.org/abstract/document/9528144 
+CERTIFICATIONS 
+• IELTS Academic | Sept 2025 
+Score: 7  
+• GRE | July 2023 
+Quantitative reasoning:151, Verbal reasoning: 137, Writing: 3.0  
+• Android Development | Udemy | May 2023 
+• Workshop on AI | IIT Roorkie | July 2018 
+• DST & Texas Instruments: India Innovation Design Contest | July 2018 
+LANGUAGES 
+• English 
+• South Indian Dialects  
+• Hindi 
+REFERENCES 
+• Dr. Mahmoud Meribout  
+Khalifa University 
+Email: mahmoud.meribout@ku.ac.ae 
+• Dr. Ameena Al Sumaiti  
+Khalifa University 
+Email: ameena.alsumaiti@ku.ac.ae 
+• Dr. Nguyen Hoach 
+Khalifa University 
+Email : nguyen.hoach@ku.ac.ae 

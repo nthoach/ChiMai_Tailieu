@@ -5,4 +5,5 @@
 QUERY=$(sed -n '1,40p' keywords.md | tr '\n' ' ' | sed 's/  */ /g')
 ESCAPED=$(python3 -c "import urllib.parse,sys; print(urllib.parse.quote(sys.argv[1]))" "$QUERY")
 echo "Opening Google Scholar with query: $QUERY"
-xdg-open "https://scholar.google.com/scholar?q=$ESCAPED"
+echo "URL: https://scholar.google.com/scholar?q=$ESCAPED"
+# xdg-open "https://scholar.google.com/scholar?q=$ESCAPED"

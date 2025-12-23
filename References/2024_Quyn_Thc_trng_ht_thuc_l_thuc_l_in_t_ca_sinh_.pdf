@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="vi-VN" xml:lang="vi-VN">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Đăng nhập
+							| Tạp chí Y học Dự phòng
+			</title>
+
+	
+<link rel="icon" href="https://vjpm.vn/public/journals/1/favicon_vi_VN.ico" />
+<meta name="generator" content="Hệ thống tạp chí mở 3.3.0.4" />
+
+	<link rel="stylesheet" href="https://vjpm.vn/index.php/vjpm/$$$call$$$/page/page/css?name=stylesheet" type="text/css" /><link rel="stylesheet" href="https://vjpm.vn/index.php/vjpm/$$$call$$$/page/page/css?name=font" type="text/css" /><link rel="stylesheet" href="https://vjpm.vn/lib/pkp/styles/fontawesome/fontawesome.css?v=3.3.0.4" type="text/css" /><style type="text/css">.pkp_structure_head { background: center / cover no-repeat url("https://vjpm.vn/public/journals/1/homepageImage_vi_VN.png");}</style><link rel="stylesheet" href="https://vjpm.vn/public/journals/1/styleSheet.css?d=2022-04-14+03%3A09%3A48" type="text/css" />
+</head>
+<body class="pkp_page_login pkp_op_index has_site_logo" dir="ltr">
+
+	<div class="pkp_structure_page">
+
+				<header class="pkp_structure_head" id="headerNavigationContainer" role="banner">
+						
+ <nav class="cmp_skip_to_content" aria-label="Chuyển đến liên kết nội dung">
+	<a href="#pkp_content_main">Chuyển đến nội dung chính</a>
+	<a href="#siteNav">Chuyển đến menu điều hướng chính</a>
+		<a href="#pkp_content_footer">Chuyển đến chân trang của trang web</a>
+</nav>
+
+			<div class="pkp_head_wrapper">
+
+				<div class="pkp_site_name_wrapper">
+					<button class="pkp_site_nav_toggle">
+						<span>Open Menu</span>
+					</button>
+										<div class="pkp_site_name">
+																<a href="						https://vjpm.vn/index.php/vjpm/index
+					" class="is_img">
+							<img src="https://vjpm.vn/public/journals/1/pageHeaderLogoImage_vi_VN.png" width="3842" height="508" alt="VJMP Banner VN" />
+						</a>
+										</div>
+				</div>
+
+				
+				<nav class="pkp_site_nav_menu" aria-label="Điều hướng Trang web">
+					<a id="siteNav"></a>
+					<div class="pkp_navigation_primary_row">
+						<div class="pkp_navigation_primary_wrapper">
+																				<ul id="navigationPrimary" class="pkp_navigation_primary pkp_nav_list">
+								<li class="">
+				<a href="https://vjpm.vn/">
+					<i class="fa fa-home  fa-fw"></i> Trang chủ
+				</a>
+							</li>
+								<li class="">
+				<a href="https://vjpm.vn/index.php/vjpm/announcement">
+					<i class="fa fa-bullhorn  fa-fw"></i> Thông báo
+				</a>
+							</li>
+								<li class="">
+				<a href="https://vjpm.vn/index.php/vjpm/about/editorialTeam">
+					<i class="fa fa-users  fa-fw"></i> Ban biên tập
+				</a>
+							</li>
+								<li class="">
+				<a href="https://vjpm.vn/index.php/vjpm/about/submissions">
+					<i class="fa fa-send  fa-fw"></i> Gửi bài
+				</a>
+							</li>
+								<li class="">
+				<a href="https://vjpm.vn/index.php/vjpm/about">
+					<i class="fa fa-book  fa-fw"></i> Xuất bản
+				</a>
+									<ul>
+																					<li class="">
+									<a href="https://vjpm.vn/index.php/vjpm/issue/current">
+										Số mới nhất
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://vjpm.vn/index.php/vjpm/issue/archive">
+										Tất cả các số
+									</a>
+								</li>
+																		</ul>
+							</li>
+								<li class="">
+				<a href="https://vjpm.vn/index.php/vjpm/about">
+					<i class="fa fa-paperclip  fa-fw"></i> Hướng dẫn
+				</a>
+									<ul>
+																					<li class="">
+									<a href="https://vjpm.vn/index.php/vjpm/register">
+										Đăng ký tài khoản
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://vjpm.vn/index.php/vjpm/submit-new-paper">
+										Gửi bài báo mới
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://vjpm.vn/index.php/vjpm/revision">
+										Nộp lại bài sửa chữa
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://vjpm.vn/index.php/vjpm/reviewers">
+										Dành cho Phản biện
+									</a>
+								</li>
+																		</ul>
+							</li>
+								<li class="">
+				<a href="https://vjpm.vn/index.php/vjpm/about">
+					<i class="fa fa-map-signs  fa-fw"></i> Thông tin
+				</a>
+									<ul>
+																					<li class="">
+									<a href="https://vjpm.vn/index.php/vjpm/about">
+										Giới thiệu về Tạp chí
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://vjpm.vn/index.php/vjpm/policy">
+										Chính sách của Tạp chí
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://vjpm.vn/index.php/vjpm/fees">
+										Lệ phí gửi bài
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://vjpm.vn/index.php/vjpm/review">
+										Quy trình xét duyệt
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://vjpm.vn/index.php/vjpm/about/privacy">
+										Cam kết bảo mật
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://vjpm.vn/index.php/vjpm/about/contact">
+										Liên hệ
+									</a>
+								</li>
+																		</ul>
+							</li>
+			</ul>
+
+				
+
+																						<div class="pkp_navigation_search_wrapper">
+									<a href="https://vjpm.vn/index.php/vjpm/search" class="pkp_search pkp_search_desktop">
+										<span class="fa fa-search" aria-hidden="true"></span>
+										Tìm kiếm
+									</a>
+								</div>
+													</div>
+					</div>
+					<div class="pkp_navigation_user_wrapper" id="navigationUserWrapper">
+							<ul id="navigationUser" class="pkp_navigation_user pkp_nav_list">
+								<li class="profile">
+				<a href="https://vjpm.vn/index.php/vjpm/user/register">
+					<button style="font-size:16px"><i class="fa fa-user-circle"> Đăng ký</i></button>
+				</a>
+							</li>
+								<li class="profile">
+				<a href="https://vjpm.vn/index.php/vjpm/login">
+					<button  style="font-size:16px"><i class="fa fa-sign-in"> Đăng nhập</i></button>
+				</a>
+							</li>
+										</ul>
+
+					</div>
+				</nav>
+			</div><!-- .pkp_head_wrapper -->
+		</header><!-- .pkp_structure_head -->
+
+						<div class="pkp_structure_content has_sidebar">
+			<div class="pkp_structure_main" role="main">
+				<a id="pkp_content_main"></a>
+
+<div class="page page_login">
+	<nav class="cmp_breadcrumbs" role="navigation" aria-label="Bạn đang ở đây:">
+	<ol>
+		<li>
+			<a href="https://vjpm.vn/index.php/vjpm/index">
+				Trang chủ
+			</a>
+			<span class="separator">/</span>
+		</li>
+		<li class="current">
+			<span aria-current="page">
+									Đăng nhập
+							</span>
+		</li>
+	</ol>
+</nav>
+
+	<h1>
+		Đăng nhập
+	</h1>
+
+	<p>
+		* Những trường bắt buộc
+	</p>
+				<p>
+			Yêu cầu đăng ký thuê bao để truy cập mục. Để xác minh thuê bao, đăng nhập vào tạp chí.
+		</p>
+	
+	<form class="cmp_form cmp_form login" id="login" method="post" action="https://vjpm.vn/index.php/vjpm/login/signIn">
+		<input type="hidden" name="csrfToken" value="c117a8f7917d36d8d3b43b761392cfa2" />
+
+		
+		<input type="hidden" name="source" value="/index.php/vjpm/article/download/1553/1102" />
+
+		<fieldset class="fields">
+			<legend class="pkp_screen_reader">Đăng nhập</legend>
+			<div class="username">
+				<label>
+					<span class="label">
+						Tên người dùng (username)
+						<span class="required" aria-hidden="true">*</span>
+						<span class="pkp_screen_reader">
+							Yêu cầu
+						</span>
+					</span>
+					<input type="text" name="username" id="username" value="" maxlength="32" required aria-required="true">
+				</label>
+			</div>
+			<div class="password">
+				<label>
+					<span class="label">
+						Mật khấu (password)
+						<span class="required" aria-hidden="true">*</span>
+						<span class="pkp_screen_reader">
+							Yêu cầu
+						</span>
+					</span>
+					<input type="password" name="password" id="password" value="" password="true" maxlength="32" required aria-required="true">
+					<a href="https://vjpm.vn/index.php/vjpm/login/lostPassword">
+						Quên mật khẩu?
+					</a>
+				</label>
+			</div>
+			<div class="remember checkbox">
+				<label>
+					<input type="checkbox" name="remember" id="remember" value="1" checked="$remember">
+					<span class="label">
+						Giữ tôi luôn đăng nhập
+					</span>
+				</label>
+			</div>
+			<div class="buttons">
+				<button class="submit" type="submit">
+					Đăng nhập
+				</button>
+
+														<a href="https://vjpm.vn/index.php/vjpm/user/register?source=%2Findex.php%2Fvjpm%2Farticle%2Fdownload%2F1553%2F1102" class="register">
+						Đăng ký
+					</a>
+							</div>
+		</fieldset>
+	</form>
+</div><!-- .page -->
+
+	</div><!-- pkp_structure_main -->
+
+									<div class="pkp_structure_sidebar left" role="complementary" aria-label="Thanh bên">
+				<div class="pkp_block block_custom" id="customblock-tapchiyhdpvn">
+	<h2 class="title">Các số đã xuất bản</h2>
+	<div class="content">
+		<ul>
+<li class="show"><a href="/index.php/vjpm/issue/archive">» 2020 đến nay</a></li>
+<li class="show"><a class="block_make_submission_link" href="http://tcyhdp.vjpm.vn/">» 2012 - 2019</a></li>
+</ul>
+<p><a title="Tạp chí Y học Dự Phòng" href="http://tcyhdp.vjpm.vn/">http://www.tapchiyhocduphong.vn/</a></p>
+<p><strong>Hotline:</strong> 0911036700</p>
+	</div>
+</div>
+<div class="pkp_block block_subscription">
+	<h2 class="title">Đăng ký thuê bao</h2>
+	<div class="content">
+					<p>Đăng nhập để truy cập tài nguyên đối với thuê bao.</p>
+					</div>
+</div>
+<div class="pkp_block block_make_submission">
+	<h2 class="pkp_screen_reader">
+		Gửi bài mới
+	</h2>
+
+	<div class="content">
+		<a class="block_make_submission_link" href="https://vjpm.vn/index.php/vjpm/about/submissions">
+			Gửi bài mới
+		</a>
+	</div>
+</div>
+<div class="pkp_block block_language">
+	<h2 class="title">
+		Ngôn ngữ
+	</h2>
+
+	<div class="content">
+		<ul>
+							<li class="locale_vi_VN current" lang="vi-VN">
+					<a href="https://vjpm.vn/index.php/vjpm/user/setLocale/vi_VN?source=%2Findex.php%2Fvjpm%2Flogin%3Fsource%3D%252Findex.php%252Fvjpm%252Farticle%252Fdownload%252F1553%252F1102%26loginMessage%3Dreader.subscriptionRequiredLoginText">
+						Tiếng Việt
+					</a>
+				</li>
+							<li class="locale_en_US" lang="en-US">
+					<a href="https://vjpm.vn/index.php/vjpm/user/setLocale/en_US?source=%2Findex.php%2Fvjpm%2Flogin%3Fsource%3D%252Findex.php%252Fvjpm%252Farticle%252Fdownload%252F1553%252F1102%26loginMessage%3Dreader.subscriptionRequiredLoginText">
+						English
+					</a>
+				</li>
+					</ul>
+	</div>
+</div><!-- .block_language -->
+<div class="pkp_block block_information">
+	<h2 class="title">Thông tin</h2>
+	<div class="content">
+		<ul>
+							<li>
+					<a href="https://vjpm.vn/index.php/vjpm/information/readers">
+						Dành cho bạn đọc
+					</a>
+				</li>
+										<li>
+					<a href="https://vjpm.vn/index.php/vjpm/information/authors">
+						Dành cho Tác giả
+					</a>
+				</li>
+										<li>
+					<a href="https://vjpm.vn/index.php/vjpm/information/librarians">
+						Dành cho Thủ thư
+					</a>
+				</li>
+					</ul>
+	</div>
+</div>
+
+			</div><!-- pkp_sidebar.left -->
+			</div><!-- pkp_structure_content -->
+
+<div class="pkp_structure_footer_wrapper" role="contentinfo">
+	<a id="pkp_content_footer"></a>
+
+	<div class="pkp_structure_footer">
+
+					<div class="pkp_footer_content">
+				<div><strong>Tạp chí Y học Dự phòng - Hội Y học Dự phòng Việt Nam</strong></div>
+<div><span style="font-size: 0.875rem;">Phó Tổng Biên tập: PGS.TS Lê Anh Tuấn</span></div>
+<div>Địa chỉ: số 1 - phố Yecxanh, phường Phạm Đình Hổ, quận Hai Bà Trưng, Thành phố Hà Nội<br />Điện thoại:  024.3972 3938 - Hotline: 0911036700 - Email: tapchiyhdp@vjpm.vn <br /><em>Giấy phép hoạt động tạp chí in và điện tử: 263/GP-BTTTT cấp ngày 17/9/2024</em></div>
+			</div>
+		
+		<div class="pkp_brand_footer" role="complementary">
+			<a href="https://vjpm.vn/index.php/vjpm/about/aboutThisPublishingSystem">
+				<img alt="Thông tin thêm về hệ thống xuất bản, Nền tảng và quy trình làm việc của OJS/PKP." src="https://vjpm.vn/templates/images/ojs_brand.png">
+			</a>
+		</div>
+	</div>
+</div><!-- pkp_structure_footer_wrapper -->
+
+</div><!-- pkp_structure_page -->
+
+<script src="https://vjpm.vn/lib/pkp/lib/vendor/components/jquery/jquery.min.js?v=3.3.0.4" type="text/javascript"></script><script src="https://vjpm.vn/lib/pkp/lib/vendor/components/jqueryui/jquery-ui.min.js?v=3.3.0.4" type="text/javascript"></script><script src="https://vjpm.vn/plugins/themes/default/js/lib/popper/popper.js?v=3.3.0.4" type="text/javascript"></script><script src="https://vjpm.vn/plugins/themes/default/js/lib/bootstrap/util.js?v=3.3.0.4" type="text/javascript"></script><script src="https://vjpm.vn/plugins/themes/default/js/lib/bootstrap/dropdown.js?v=3.3.0.4" type="text/javascript"></script><script src="https://vjpm.vn/plugins/themes/default/js/main.js?v=3.3.0.4" type="text/javascript"></script>
+
+
+</body>
+</html>

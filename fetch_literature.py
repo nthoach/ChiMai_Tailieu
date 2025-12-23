@@ -39,18 +39,25 @@ os.makedirs(REF_DIR, exist_ok=True)
 
 def read_keywords():
     kws = []
+    in_vietnamese = False
     with open(KEYWORDS_FILE, 'r', encoding='utf-8') as f:
         for line in f:
             line = line.strip()
-            if not line or line.startswith('#'):
+            if line == '## Tiếng Việt':
+                in_vietnamese = True
                 continue
-            # skip section headers
-            if line.endswith(':'):
-                continue
-            # if line starts with '-', remove it
-            if line.startswith('-'):
-                line = line[1:].strip()
-            kws.append(line)
+            elif line.startswith('##') and in_vietnamese:
+                break  # Stop at next section
+            if in_vietnamese:
+                if not line or line.startswith('#'):
+                    continue
+                # skip section headers
+                if line.endswith(':'):
+                    continue
+                # if line starts with '-', remove it
+                if line.startswith('-'):
+                    line = line[1:].strip()
+                kws.append(line)
     return kws
 
 def sanitize_filename(s):
@@ -105,7 +112,14 @@ def query_libgen(query, rows=20):
     mirrors = [
         'https://libgen.is/search.php',
         'https://libgen.rs/search.php',
-        'https://libgen.st/search.php'
+        'https://libgen.st/search.php',
+        'https://libgen.li/search.php',
+        'https://libgen.lc/search.php',
+        'https://libgen.rocks/search.php',
+        'https://libgen.fun/search.php',
+        'https://libgen.me/search.php',
+        'https://libgen.org/search.php',
+        'https://libgen.io/search.php'
     ]
     for base in mirrors:
         try:
@@ -143,7 +157,17 @@ def query_libgen(query, rows=20):
 
 def query_scihub(dois, timeout=20, max_per_run=10):
     """Query Sci-Hub mirrors for given DOIs and return list of {'doi', 'pdf_url'} matches."""
-    scihub_bases = ['https://sci-hub.se/', 'https://sci-hub.ru/', 'https://sci-hub.st/']
+    scihub_bases = [
+        'https://sci-hub.se/',
+        'https://sci-hub.ru/',
+        'https://sci-hub.st/',
+        'https://sci-hub.tw/',
+        'https://sci-hub.hk/',
+        'https://sci-hub.mn/',
+        'https://sci-hub.ee/',
+        'https://sci-hub.do/',
+        'https://sci-hub.pl/'
+    ]
     found = []
     for doi in (dois or [])[:max_per_run]:
         if not doi:
@@ -176,8 +200,8 @@ def main():
         print('No keywords found in', KEYWORDS_FILE)
         sys.exit(1)
 
-    # build a compact query using first 6 keywords
-    query = ' '.join(kws[:8])
+    # build a compact query using all Vietnamese keywords
+    query = ' '.join(kws)
     print('Querying CrossRef for:', query)
     
     # Search CrossRef with pagination
